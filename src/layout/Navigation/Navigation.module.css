@@ -1,0 +1,19 @@
+.wrap {
+  @apply bg-slate-200 p-4;
+}
+
+.list {
+  @apply flex justify-center;
+}
+
+.link {
+  @apply px-3 py-2 rounded-lg transition-colors border;
+}
+
+.link:hover {
+  @apply bg-slate-300
+}
+
+.link.active {
+  @apply bg-slate-300 border-slate-400;
+}

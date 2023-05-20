@@ -1,0 +1,7 @@
+.wrap {
+  @apply w-full h-full flex justify-center items-center;
+}
+
+.title {
+  @apply text-8xl pt-20;
+}

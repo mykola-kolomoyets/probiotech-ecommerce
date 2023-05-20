@@ -1,0 +1,15 @@
+.wrap {
+  @apply w-full h-full flex flex-col justify-center items-center;
+}
+
+.title {
+  @apply text-8xl pt-20 text-center;
+}
+
+.subtitle {
+  @apply text-5xl mt-4;
+}
+
+.page-name {
+  @apply capitalize;
+}
