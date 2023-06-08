@@ -1,0 +1,24 @@
+.wrap {
+  @apply flex;
+}
+
+.button,
+.input {
+  @apply bg-slate-200 text-green-800;
+}
+
+.button {
+  @apply z-10 p-3;
+}
+
+.button.decrement {
+  @apply rounded-l-full pr-2;
+}
+
+.button.increment {
+  @apply rounded-r-full pl-2;
+}
+
+.input {
+  @apply pointer-events-none relative max-w-[3rem] appearance-none px-2 text-center font-semibold;
+}

@@ -1,0 +1,39 @@
+.main-image-wrap {
+  @apply aspect-square w-full overflow-hidden;
+}
+
+.inner {
+  @apply relative px-2;
+}
+
+.thumbs-wrap {
+  @apply mt-3 flex flex-row flex-nowrap items-center overflow-x-hidden p-1;
+}
+
+.thumb-item {
+  @apply aspect-square max-w-[calc(25%-8px)] flex-shrink-0 overflow-hidden rounded-md border-2 border-transparent;
+}
+
+.thumb-item.active {
+  @apply border-green-600;
+}
+
+.thumb-item + .thumb-item {
+  @apply ml-3;
+}
+
+.thumb-image {
+  @apply h-full w-full object-cover object-center;
+}
+
+.navigation {
+  @apply absolute top-1/2 isolate flex h-[40px] w-[40px] -translate-y-1/2 items-center justify-center rounded-full bg-green-200;
+}
+
+.prev {
+  @apply left-[-20px];
+}
+
+.next {
+  @apply right-[-20px];
+}

@@ -1,0 +1,95 @@
+.wrap {
+  @apply container mx-auto mt-6 grid grid-cols-1 gap-6 px-5 pb-20 lg:grid-cols-2;
+}
+
+.carousel-wrap {
+  @apply order-last lg:order-first;
+}
+
+.title {
+  @apply mb-2 text-[2.5rem] font-bold text-slate-900;
+}
+
+.description {
+  @apply mb-3 w-4/5 text-sm text-slate-800;
+}
+
+.rating-wrap {
+  @apply flex items-center;
+}
+
+.feedbacks-amount {
+  @apply ml-1 text-sm text-slate-800;
+}
+
+.divider {
+  @apply relative block py-7 before:absolute before:left-0 before:top-1/2 before:h-[1px] before:w-full before:bg-slate-200;
+}
+
+.price {
+  @apply text-[1.5rem] font-semibold text-slate-900;
+}
+
+.section-title {
+  @apply mb-5 text-base font-bold text-slate-900;
+}
+
+.color-option + .color-option {
+  @apply ml-1;
+}
+
+.purchase-selection-wrap {
+  @apply mb-6 flex items-center;
+}
+
+.purchase-wrap {
+  @apply flex flex-col;
+}
+
+.comment-wrap {
+  @apply ml-6;
+}
+
+.comment-paragraph {
+  @apply text-xs font-medium text-slate-800;
+}
+
+.items-left-wrap {
+  @apply font-bold text-orange-400;
+}
+
+.comment-paragraph + .comment-paragraph {
+  @apply mt-1;
+}
+
+.cta-wrap {
+  @apply flex flex-col items-center md:flex-row;
+}
+
+.button {
+  @apply flex w-full items-center justify-center rounded-full  border border-green-800 px-9 py-3 text-base font-semibold transition-colors duration-150 ease-in-out;
+}
+
+.button.primary {
+  @apply bg-green-800 text-white hover:bg-green-700;
+}
+
+.button.secondary {
+  @apply bg-slate-200 text-green-800  hover:bg-green-700 hover:text-white;
+}
+
+.cta-wrap .button:focus-visible {
+  @apply ring-4;
+}
+
+.cta-wrap .button:focus {
+  @apply ring-4;
+}
+
+.cta-wrap .button:focus:not(.button:focus-visible) {
+  @apply ring-4;
+}
+
+.button + .button {
+  @apply mt-4 md:ml-4 md:mt-0;
+}

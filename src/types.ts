@@ -13,3 +13,26 @@ export type WithChildren<T> = T & {
 };
 
 export type FCProps<T> = WithClassName<WithChildren<T>>;
+
+/**
+ * === PRODUCTS TYPES ===
+ */
+
+export type ProductColorOption = {
+  id: string;
+  primary: string;
+  secondary: string;
+};
+
+export type ProductItem = {
+  id: string;
+  title: string;
+  description: string;
+  price: number;
+  rating: number;
+  feedBacksAmount: number;
+  images: string[];
+  colorsOptions: ProductColorOption[];
+  currentColorOptionId?: string;
+  itemsLeft: number;
+};

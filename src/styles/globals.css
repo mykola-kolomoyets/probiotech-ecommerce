@@ -4,4 +4,68 @@
 
 @import url("./reset.css");
 
+@layer components {
+  .lock-scroll-y {
+    @apply fixed bottom-0 left-0 right-0 top-0 overflow-y-hidden;
+  }
 
+  body .visually-hidden {
+    @apply absolute m-[-1px] h-[1px] w-[1px] overflow-hidden border-0 p-0;
+
+    clip: rect(0 0 0 0);
+  }
+
+  body .focus-primary:focus-visible {
+    @apply outline-none ring-2 ring-blue-500;
+  }
+
+  body .focus-primary:focus {
+    @apply outline-none ring-2 ring-blue-500;
+  }
+
+  body .focus-within-primary:focus-within {
+    @apply outline-none ring-2 ring-blue-500;
+  }
+
+  body .focus-primary:focus:not(body .focus-primary:focus-visible) {
+    @apply ring-0;
+  }
+
+  body .focus-primary-child {
+    @apply ring-2 ring-blue-500;
+  }
+
+  ::-moz-selection {
+    @apply bg-green-400 text-slate-900;
+  }
+
+  ::selection {
+    @apply bg-green-400 text-slate-900;
+  }
+}
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  *::-webkit-scrollbar {
+    @apply lg:h-3 lg:w-3;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    @apply lg:bg-slate-500;
+  }
+
+  *::-webkit-scrollbar-track {
+    @apply lg:bg-slate-100;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    @apply lg:rounded-sm lg:border-4 lg:border-slate-100 lg:bg-slate-300;
+  }
+}

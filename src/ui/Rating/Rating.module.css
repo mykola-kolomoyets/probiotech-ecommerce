@@ -1,0 +1,27 @@
+.stars-wrap {
+  @apply flex;
+}
+
+.star {
+  @apply text-slate-300;
+}
+
+.star.filled {
+  @apply text-green-600;
+}
+
+.star + .star {
+  @apply ml-[1px];
+}
+
+.content {
+  @apply rounded-lg border border-solid border-slate-200 bg-slate-100 px-2 py-1 shadow-sm data-[state=delayed-open]:data-[side=bottom]:animate-slide-up-and-fade data-[state=delayed-open]:data-[side=left]:animate-slide-right-and-fade data-[state=delayed-open]:data-[side=right]:animate-slide-left-and-fade data-[state=delayed-open]:data-[side=top]:animate-slide-down-and-fade;
+}
+
+.tooltip-rating {
+  @apply text-sm font-medium text-slate-800;
+}
+
+.arrow {
+  @apply fill-slate-200;
+}
